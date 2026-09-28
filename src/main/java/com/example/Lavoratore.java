@@ -9,6 +9,7 @@ public class Lavoratore implements Runnable {
         this.nome = nome;
     }
 
+    @Override
     public void run() {
         while(c.incrementa(this.nome)) {
             c.incrementa(this.nome);
